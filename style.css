@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    display: flex;
+    background: linear-gradient(120deg, rgb(253, 225, 173), rgb(150, 237, 238));
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Raleway';
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 400px;
+    /* height: 610px; */
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: rgb(101, 101, 101) 2px 1px 15px -6px ;
+    box-sizing: border-box;
+}
+
+.title{
+    margin-bottom: 30px;
+    font-size: 24px;
+    width: 300px;
+    font-weight: 600;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.formField{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    font-size: 14px;
+    font-weight: 600;
+    gap: 8px;
+}
+
+input, select{
+    height: 32px;
+    border: none;
+    background-color: rgb(214, 253, 248);
+    border-radius: 8px;
+    padding: 6px;
+    box-sizing: border-box;
+    font-weight: 300;
+}
+
+select {
+    height: 60px;
+    padding: 6px;
+}
+
+.bottomContain{
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+.button {
+    height: 20px;
+    width: 60px;
+    background-color: rgb(31, 223, 226);
+    padding: 8px;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.grow:hover { 
+    transform: scale(1.05); 
+    }
+
+input:focus{
+    border: none;
+    box-shadow: rgb(253, 247, 214) 8px 1px 3px -6px;
+}
+
+.active{
+    border: rgb(246, 52, 114) 1px solid;
+}
+
+.error {
+    color: rgb(246, 52, 114);
+}
+
+.errorList{
+    color: rgb(246, 52, 114);
+    width: 200px;
+}
+
+.successful{
+    color: rgb(0, 207, 211);
+}

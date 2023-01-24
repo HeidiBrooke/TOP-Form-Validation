@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation by Brooke</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="title">Your deets, please:</div>
+        <form novalidate>
+            <div class="formField" id="formField">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <span class="error" aria-live="polite"></span>
+            </div>
+            <div class="formField" id="formField">
+                <label for="country">Country</label>
+                <select multiple="multiple" id="country" name="country">
+                    <option value="us">USA</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="nz">New Zealand</option>
+                    <option value="sk">South Korea</option>
+                    <option value="ch">Chile</option>
+                </select>
+                <span class="error" aria-live="polite"></span>
+            </div>
+            <div class="formField" id="formField">
+                <label for="zipCode">Zipcode</label>
+                <input id="zipCode" name="zipCode">
+                <span class="error" aria-live="polite"></span>
+            </div>
+            <div class="formField" id="formField">
+                <label for="password">Password</label>
+                <input id="password" name="password">
+                <span class="error" aria-live="polite"></span>
+            </div>
+            <div class="formField" id="formField">
+                <label for="passwordConfirm">Confirm Password</label>
+                <input id="passwordConfirm" name="passwordConfirm">
+                <span class="error" aria-live="polite"></span>
+            </div>
+            <div class="bottomContain">
+                <span class="errorList"></span>
+                <div class="button submit grow" id="submit">Submit</div>
+            </div>
+        </form>
+
+    </div>
+    
+</body>
+</html>
